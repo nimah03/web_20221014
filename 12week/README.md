@@ -1,4 +1,4 @@
-12주차: Spring Security 및 회원 인증 준비 (10주차 로그인과 로그아웃 - 1)
+12주차: Spring Security 및 회원 인증 준비 
 Spring Security 기본 개념 학습: 인증(Authentication)과 인가(Authorization)의 개념 및 Security Context에 대한 이해를 높였습니다.
 
 로그인/로그아웃 동작: Spring Security를 사용한 사용자 로그인 및 로그아웃 동작 원리를 학습했습니다.
