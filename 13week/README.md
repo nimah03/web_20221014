@@ -1,11 +1,10 @@
-ORM(Object-Relational Mapping) 개념과 영속성 컨텍스트를 이해했습니다.
-EntityManager가 객체 상태(생성, 조회, 수정, 삭제)를 관리하는 원리를 배웠습니다.
-HTTP 메서드 중 PUT, DELETE를 활용한 RESTful CRUD 구조를 실습했습니다.
-article_list.html에 수정 버튼을 추가했습니다.
-수정 후 redirect:/article_list로 페이지 이동하도록 했습니다.
-article_list.html에 삭제 버튼을 추가했습니다.
+11주차: 세션 관리 및 보안 설정
+스프링 세션 관리: 스프링 부트 환경에서의 세션 관리 원리 (쿠키와 세션의 차이) 및 HttpSession 사용법을 학습했습니다.
 
-DELETE 요청을 보낼 수 있도록 폼 내부에 hidden input을 추가했습니다.
-BlogController와 BlogService에서 삭제 로직을 작성했습니다.
-존재하지 않는 게시글 접근 시 /error_page/article_error.html로 이동하도록 구현했습니다.
-오류 페이지에서 사용자에게 안내 메시지를 표시하고 “이전으로 돌아가기” 버튼을 추가했습니다.
+Spring Security 설정: SecurityConfig 클래스를 통해 보안 관련 API를 구현하고, 인가(Authorization) 설정, 폼 로그인, 세션 관련 설정을 진행했습니다.
+
+세션 보안 기능 추가:
+
+동시 세션 제한 등의 세션 보안 기능을 활성화했습니다.
+
+application.properties에 server.servlet.session.timeout (세션 만료 시간) 및 server.servlet.session.cookie.secure (쿠키 보안 플래그) 설정을 추가하여 세션 쿠키 보안을 강화했습니다.
