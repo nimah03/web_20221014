@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 보기</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="mt-4 container">
+    <h1 class="mb-4">게시글 상세 정보</h1>
+    
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title" th:text="${boards.title}">제목입니다</h4>
+        </div>
+        <div class="card-body">
+            <p class="card-text" th:text="${boards.content}">글 내용입니다.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>ID:</strong> <span th:text="${boards.id}">1</span></li>
+            <li class="list-group-item"><strong>작성자:</strong> <span th:text="${boards.user}">GUEST</span></li>
+            <li class="list-group-item"><strong>작성일:</strong> <span th:text="${boards.newdate}">YYYY-MM-DD HH:MM:SS</span></li>
+            <li class="list-group-item"><strong>조회수:</strong> <span th:text="${boards.count}">0</span></li>
+            <li class="list-group-item"><strong>좋아요:</strong> <span th:text="${boards.likec}">0</span></li>
+        </ul>
+        <div class="card-footer text-right">
+            <a href="/board_list" class="btn btn-secondary">목록으로</a>
+            
+            <a th:href="@{/board_edit/{id}(id=${boards.id})}" class="btn btn-info">수정</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
