@@ -1,11 +1,12 @@
-ORM(Object-Relational Mapping) 개념과 영속성 컨텍스트를 이해했습니다.
-EntityManager가 객체 상태(생성, 조회, 수정, 삭제)를 관리하는 원리를 배웠습니다.
-HTTP 메서드 중 PUT, DELETE를 활용한 RESTful CRUD 구조를 실습했습니다.
-article_list.html에 수정 버튼을 추가했습니다.
-수정 후 redirect:/article_list로 페이지 이동하도록 했습니다.
-article_list.html에 삭제 버튼을 추가했습니다.
+12주차: Spring Security 및 회원 인증 준비 (10주차 로그인과 로그아웃 - 1)
+Spring Security 기본 개념 학습: 인증(Authentication)과 인가(Authorization)의 개념 및 Security Context에 대한 이해를 높였습니다.
 
-DELETE 요청을 보낼 수 있도록 폼 내부에 hidden input을 추가했습니다.
-BlogController와 BlogService에서 삭제 로직을 작성했습니다.
-존재하지 않는 게시글 접근 시 /error_page/article_error.html로 이동하도록 구현했습니다.
-오류 페이지에서 사용자에게 안내 메시지를 표시하고 “이전으로 돌아가기” 버튼을 추가했습니다.
+로그인/로그아웃 동작: Spring Security를 사용한 사용자 로그인 및 로그아웃 동작 원리를 학습했습니다.
+
+암호화 알고리즘: 기본 Bcrypt 암호화 알고리즘의 사용을 준비했습니다.
+
+입력값 필터링 (Validation) 준비:
+
+pom.xml에 Validation 모듈 의존성을 추가했습니다.
+
+AddMemberRequest.java DTO 파일에 @NotBlank, @Email, @Pattern, @Size, @Min, @Max 등의 @어노테이션을 사용하여 입력값 검증 처리를 준비했습니다.
