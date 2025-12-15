@@ -1,9 +1,12 @@
-웹 서버 성능 최적화 개요: 웹 서버 성능의 중요성 및 소/중/대 규모 데이터에 따른 성능 요구사항을 분석했습니다.
+10주차: Spring Security 및 회원 인증 준비 (10주차 로그인과 로그아웃 - 1)
+Spring Security 기본 개념 학습: 인증(Authentication)과 인가(Authorization)의 개념 및 Security Context에 대한 이해를 높였습니다.
 
-게시판 검색 기능 구현: 게시글 제목, 내용 등을 기준으로 검색하는 기능을 구현했습니다.
+로그인/로그아웃 동작: Spring Security를 사용한 사용자 로그인 및 로그아웃 동작 원리를 학습했습니다.
 
-게시판 페이징 (Pagination) 기능 구현:
+암호화 알고리즘: 기본 Bcrypt 암호화 알고리즘의 사용을 준비했습니다.
 
-PagingAndSortingRepository 또는 JpaRepository의 페이징 기능을 활용했습니다.
+입력값 필터링 (Validation) 준비:
 
-페이지 번호 이동 및 현재 페이지에 따른 이전/다음 버튼 활성화/비활성화 로직을 구현했습니다
+pom.xml에 Validation 모듈 의존성을 추가했습니다.
+
+AddMemberRequest.java DTO 파일에 @NotBlank, @Email, @Pattern, @Size, @Min, @Max 등의 @어노테이션을 사용하여 입력값 검증 처리를 준비했습니다.
